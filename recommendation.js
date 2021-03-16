@@ -8,7 +8,7 @@ function fetchval(identifier){
             // alert(identifier); 
             console.log(identifier)
             $.ajax({
-                url:'https://raw.githubusercontent.com/PJCIP/futures_recommendation/master/futuresonlyv1.json',
+                url:'https://raw.githubusercontent.com/PJCIP/futures_recommendation/master/data/futures.json',
                 dataType:'json',
                 type:'get',
                 cache:false,
@@ -81,7 +81,7 @@ $(document).ready(function(){
         }
         //This below ajax finds the symbols that are less than the amount that could be invested
         $.ajax({
-                url:'https://raw.githubusercontent.com/PJCIP/futures_recommendation/master/futuresonlyv1.json',
+                url:'https://raw.githubusercontent.com/PJCIP/futures_recommendation/master/data/futures.json',
                 dataType:'json',
                 type:'get',
                 cache:false,
